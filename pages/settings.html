@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<meta charset="UTF-8" />
+
+<title>Settings | NextRole</title>
+
+<link rel="stylesheet" href="../css/settings.css">
+<link rel="stylesheet" href="../css/style.css">
+
+</head>
+
+<body>
+
+<div id="navbar"></div>
+
+<div class="settings-header">
+
+<h1 class="settings-title">⚙ Settings</h1>
+
+<button
+class="dashboard-btn"
+onclick="window.location.href='jobseeker/jobseeker-dashboard.html'">
+
+← Back to Dashboard
+
+</button>
+
+</div>
+
+
+<div class="settings">
+
+<div class="setting-item" data-target="account">
+Account Preferences
+</div>
+
+<div class="setting-content" id="account">
+
+<label>Mobile Number</label>
+
+<input type="text" placeholder="+91 XXXXXXXXXX">
+
+<label>
+<input type="checkbox">
+Allow employers to see my phone number
+</label>
+
+</div>
+
+
+<div class="setting-item" data-target="notifications">
+Notifications
+</div>
+
+<div class="setting-content" id="notifications">
+
+<label><input type="checkbox"> Job alerts</label><br>
+
+<label><input type="checkbox"> Application status updates</label><br>
+
+<label><input type="checkbox"> Email notifications</label>
+
+</div>
+
+
+<div class="setting-item" data-target="appearance">
+Appearance
+</div>
+
+<div class="setting-content" id="appearance">
+
+<label>
+<input type="radio" name="theme" value="light">
+Light Theme
+</label>
+
+<br><br>
+
+<label>
+<input type="radio" name="theme" value="dark">
+Dark Theme
+</label>
+
+</div>
+
+
+<div class="setting-item" data-target="help">
+Help Center
+</div>
+
+<div class="setting-content" id="help">
+
+<ul>
+<li>Complete your profile to increase visibility</li>
+<li>Apply only through verified job listings</li>
+<li>Never pay money for jobs</li>
+<li>Report suspicious employers immediately</li>
+</ul>
+
+</div>
+
+
+<div class="setting-item" data-target="legal">
+Legal
+</div>
+
+<div class="setting-content" id="legal">
+
+<p>
+By using NextRole, you agree to follow our platform rules.
+Any misuse, fraud, or impersonation may lead to permanent
+account suspension or legal action.
+</p>
+
+<label>
+<input type="checkbox" id="agreeLegal">
+I agree to the Terms & License Agreement
+</label>
+
+</div>
+
+
+<div class="setting-item danger" data-target="actions">
+Account Actions
+</div>
+
+<div class="setting-content" id="actions">
+
+<button id="logoutBtn">Logout</button>
+
+<br><br>
+
+<button id="deleteAccountBtn" class="danger-btn">
+Delete Account Permanently
+</button>
+
+<p id="msg"></p>
+
+</div>
+
+</div>
+
+
+<script src="../js/core/theme.js"></script>
+
+<script type="module" src="../js/core/navbar.js"></script>
+
+<script type="module" src="../js/core/settings.js"></script>
+
+</body>
+</html>

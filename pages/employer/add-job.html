@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<title>Add Job | Employer</title>
+
+<link rel="stylesheet" href="../../css/style.css">
+
+</head>
+
+<body>
+
+<div id="navbar"></div>
+
+<div class="form-container">
+
+<h2>Add New Job</h2>
+
+<!-- Back Button -->
+<button
+onclick="window.location.href='employer-dashboard.html'"
+class="btn btn-primary">
+
+← Back to Dashboard
+
+</button>
+
+<br><br>
+
+<form id="jobForm">
+
+<input type="text" id="title" placeholder="Job Title" required>
+<br><br>
+
+<input type="text" id="company" placeholder="Company Name" required>
+<br><br>
+
+<input type="text" id="location" placeholder="Location" required>
+<br><br>
+
+<select id="jobType" required>
+
+<option value="">Select Job Type</option>
+<option value="Full-time">Full-time</option>
+<option value="Internship">Internship</option>
+<option value="Part-time">Part-time</option>
+
+</select>
+
+<br><br>
+
+<input type="text"
+id="experience"
+placeholder="Experience (e.g. 0-2 years)"
+required>
+
+<br><br>
+
+<textarea
+id="description"
+placeholder="Job Description"
+required>
+</textarea>
+
+<br><br>
+
+<input
+type="url"
+id="officialLink"
+placeholder="Official company apply link (optional)"
+>
+
+<br><br>
+
+<button type="submit">Post Job</button>
+
+<button
+type="button"
+onclick="window.location.href='posted-jobs.html'">
+
+Cancel
+
+</button>
+
+</form>
+
+<p id="msg"></p>
+
+</div>
+
+
+<script src="../../js/core/theme.js"></script>
+
+<script type="module"
+src="../../js/employer/add-job.js"></script>
+
+<script type="module"
+src="../../js/core/navbar.js"></script>
+
+</body>
+
+</html>

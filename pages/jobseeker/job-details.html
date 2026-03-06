@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+<title>Job Details | NextRole</title>
+
+<link rel="stylesheet" href="../../css/job-details.css">
+<link rel="stylesheet" href="../../css/style.css">
+
+</head>
+
+<body>
+
+<div id="navbar"></div>
+
+<div class="page-header">
+
+<h1>Job Details</h1>
+
+<button id="backBtn" class="back-btn">
+← Back to Jobs
+</button>
+
+</div>
+
+<hr>
+
+<div class="job-details-container">
+
+<div id="jobDetails"></div>
+
+<button id="applyBtn" class="apply-btn">
+Apply for this Job
+</button>
+
+<button id="saveBtn" class="save-btn">
+⭐ Save Job
+</button>
+
+<a id="officialApplyBtn" target="_blank" style="display:none;">
+Apply on Official Website
+</a>
+
+<p id="msg"></p>
+
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+
+<script>
+emailjs.init("ByWWt8TughcPbW0rJ");
+</script>
+
+<script src="../../js/core/theme.js"></script>
+
+<script type="module" src="../../js/core/navbar.js"></script>
+
+<script type="module" src="../../js/jobseeker/job-details.js"></script>
+
+</body>
+
+</html>

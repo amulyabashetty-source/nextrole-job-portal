@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Login | NextRole</title>
+
+  <link rel="stylesheet" href="../css/style.css">
+
+  <link rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+</head>
+
+<body>
+
+<div class="auth-container">
+
+<h1>Login</h1>
+
+<form id="loginForm">
+
+<input type="email" id="email" placeholder="Email" required>
+
+<div class="password-field">
+  <input type="password" id="password" placeholder="Password" required>
+  <i class="fa-solid fa-eye eye" id="togglePassword"></i>
+</div>
+
+<button type="submit">Login</button>
+
+</form>
+
+<p id="msg"></p>
+
+<div class="auth-links">
+<a href="#" id="forgotPassword">Forgot Password?</a>
+</div>
+
+<button class="google-btn" id="googleLoginBtn">
+Sign in with Google
+</button>
+
+<div class="auth-links">
+Don't have an account?
+<a href="signup.html">Signup</a>
+</div>
+
+</div>
+
+<script src="../js/core/theme.js"></script>
+
+<script type="module" src="../js/auth/login.js"></script>
+
+</body>
+</html>

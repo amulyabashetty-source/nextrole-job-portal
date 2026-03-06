@@ -1,0 +1,75 @@
+body {
+  font-family: Arial, sans-serif;
+  background: #f4f6f8;
+  padding: 20px;
+}
+
+.settings {
+  max-width: 700px;
+  margin: auto;
+}
+
+.setting-item {
+  background: white;
+  padding: 14px 18px;
+  margin-bottom: 12px;
+  border-radius: 8px;
+  font-weight: 600;
+  cursor: pointer;
+  border: 1px solid #ddd;
+}
+
+.setting-item.danger {
+  color: #d93025;
+}
+
+.setting-content {
+  display: none;
+  padding: 16px 18px;
+  margin: -6px 0 16px 0;
+  background: #fafafa;
+  border-radius: 8px;
+  border: 1px solid #e0e0e0;
+}
+
+.setting-content input[type="text"] {
+  width: 100%;
+  padding: 8px;
+  margin: 8px 0 12px;
+}
+
+.danger-btn {
+  background: #d93025;
+  color: white;
+  border: none;
+  padding: 10px 14px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+/* ---------- DARK THEME ---------- */
+body.dark {
+  background: #121212;
+  color: #eaeaea;
+}
+
+body.dark .setting-item {
+  background: #1e1e1e;
+  border-color: #333;
+}
+
+body.dark .setting-content {
+  background: #1a1a1a;
+  border-color: #333;
+}
+
+body.dark input,
+body.dark textarea {
+  background: #222;
+  color: #fff;
+  border: 1px solid #444;
+}
+
+body.dark .danger-btn {
+  background: #b3261e;
+}

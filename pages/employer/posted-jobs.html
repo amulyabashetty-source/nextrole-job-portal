@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<title>My Posted Jobs | NextRole</title>
+
+<link rel="stylesheet" href="../../css/style.css">
+
+<style>
+
+.page-header{
+display:flex;
+justify-content:space-between;
+align-items:center;
+margin-bottom:20px;
+}
+
+.page-header h2{
+margin:0;
+}
+
+.dashboard-btn{
+background:#2563eb;
+color:white;
+border:none;
+padding:10px 16px;
+border-radius:6px;
+cursor:pointer;
+}
+
+.dashboard-btn:hover{
+background:#1d4ed8;
+}
+
+.jobs-wrapper{
+max-width:800px;
+margin:auto;
+}
+
+.job-card{
+border:1px solid #ddd;
+border-radius:8px;
+padding:16px;
+margin-bottom:15px;
+background:white;
+}
+
+.job-card h3{
+margin-top:0;
+}
+
+.job-meta{
+color:#555;
+margin:5px 0;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<div id="navbar"></div>
+
+<div class="jobs-wrapper">
+
+<div class="page-header">
+
+<h2>My Posted Jobs</h2>
+
+<button
+class="dashboard-btn"
+onclick="window.location.href='employer-dashboard.html'">
+
+← Back to Dashboard
+
+</button>
+
+</div>
+
+<hr>
+
+<div id="jobsContainer"></div>
+
+<p id="msg"></p>
+
+</div>
+
+<script src="../../js/core/theme.js"></script>
+
+<script type="module" src="../../js/core/navbar.js"></script>
+
+<script type="module" src="../../js/employer/posted-jobs.js"></script>
+
+</body>
+
+</html>

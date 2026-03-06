@@ -1,0 +1,545 @@
+/* ================================
+   THEME VARIABLES
+================================ */
+*{
+  box-sizing: border-box;
+}
+:root{
+  --bg:#f4f6f8;
+  --text:#111;
+  --card:#ffffff;
+  --border:#e0e0e0;
+}
+
+body.dark{
+  --bg:#121212;
+  --text:#eaeaea;
+  --card:#1e1e1e;
+  --border:#333;
+}
+
+body{
+  background:var(--bg);
+  color:var(--text);
+  transition:background .25s,color .25s,border .25s;
+}
+
+
+/* ================================
+   NAVBAR
+================================ */
+
+.navbar{
+  height:60px;
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  padding:0 20px;
+  background:var(--card);
+  border-bottom:1px solid var(--border);
+  position:sticky;
+  top:0;
+  z-index:1000;
+}
+
+.nav-left{
+  display:flex;
+  align-items:center;
+  gap:10px;
+}
+
+.brand{
+  font-size:20px;
+  font-weight:600;
+  color:#0a66c2;
+}
+
+.nav-center{
+  flex:1;
+  display:flex;
+  justify-content:center;
+}
+
+.search-input{
+  width:420px;
+  max-width:100%;
+  padding:8px 14px;
+  border-radius:20px;
+  border:1px solid var(--border);
+  outline:none;
+  background:var(--card);
+  color:var(--text);
+}
+
+body.dark .search-input{
+  background:#222;
+  border:1px solid #444;
+}
+
+.nav-right{
+  position:relative;
+}
+
+#navAvatar{
+  width:38px;
+  height:38px;
+  border-radius:50%;
+  object-fit:cover;
+  cursor:pointer;
+  border:2px solid #0a66c2;
+}
+
+
+/* ================================
+   DROPDOWN MENU
+================================ */
+
+.nav-menu{
+  position:absolute;
+  right:0;
+  top:55px;
+  width:190px;
+  background:var(--card);
+  border:1px solid var(--border);
+  border-radius:8px;
+  box-shadow:0 6px 18px rgba(0,0,0,0.2);
+  overflow:hidden;
+}
+
+.nav-menu a,
+.nav-menu button{
+  display:block;
+  width:100%;
+  padding:10px 14px;
+  border:none;
+  background:none;
+  text-align:left;
+  cursor:pointer;
+  font-size:14px;
+  color:var(--text);
+}
+
+.nav-menu a:hover,
+.nav-menu button:hover{
+  background:rgba(0,0,0,0.05);
+}
+
+body.dark .nav-menu a:hover,
+body.dark .nav-menu button:hover{
+  background:rgba(255,255,255,0.08);
+}
+
+.nav-menu hr{
+  margin:6px 0;
+}
+
+.danger{
+  color:#d93025;
+}
+
+.hidden{
+  display:none;
+}
+
+
+/* ================================
+   GLOBAL TEXT
+================================ */
+
+h1,h2,h3,h4,h5,
+p,span,label,strong{
+  color:var(--text);
+}
+
+
+/* ================================
+   CARDS / CONTAINERS
+================================ */
+
+.card,
+.job-card,
+.box,
+.setting-item,
+#profileBox{
+  background:var(--card);
+  color:var(--text);
+  border:1px solid var(--border);
+  border-radius:10px;
+}
+
+.job-card{
+  padding:20px;
+}
+
+
+/* ================================
+   INPUTS
+================================ */
+
+input,
+textarea,
+select{
+  background:var(--card);
+  color:var(--text);
+  border:1px solid var(--border);
+}
+
+select option{
+  color:black;
+}
+
+body.dark select option{
+  color:white;
+  background:#1e1e1e;
+}
+
+
+/* ================================
+   BUTTON SYSTEM
+================================ */
+
+button,
+.btn{
+  padding:10px 16px;
+  border-radius:8px;
+  border:1px solid var(--border);
+  background:var(--card);
+  color:var(--text);
+  font-size:14px;
+  font-weight:500;
+  cursor:pointer;
+  transition:all .2s ease;
+}
+
+button:hover,
+.btn:hover{
+  background:#f1f3f5;
+}
+
+body.dark button:hover,
+body.dark .btn:hover{
+  background:#2a2a2a;
+}
+
+
+/* PRIMARY BUTTON */
+
+.btn-primary,
+#viewJobsBtn,
+#myApplicationsBtn,
+#addJobBtn,
+#myJobsBtn,
+#viewApplicantsBtn{
+  background:#2563eb;
+  border:none;
+  color:white;
+}
+
+.btn-primary:hover,
+#viewJobsBtn:hover,
+#myApplicationsBtn:hover,
+#addJobBtn:hover,
+#myJobsBtn:hover,
+#viewApplicantsBtn:hover{
+  background:#1d4ed8;
+}
+
+
+/* LOGOUT / DANGER BUTTON */
+
+.btn-danger,
+#logoutBtn{
+  background:#ef4444;
+  border:none;
+  color:white;
+}
+
+.btn-danger:hover,
+#logoutBtn:hover{
+  background:#dc2626;
+}
+
+
+/* spacing between dashboard buttons */
+
+button + button{
+  margin-left:8px;
+}
+
+
+/* ================================
+   JOB PAGE
+================================ */
+
+.page-header{
+  background:var(--card);
+  padding:20px;
+  border-bottom:1px solid var(--border);
+}
+
+.jobs-container{
+  background:transparent;
+}
+
+.job-meta{
+  color:var(--text);
+}
+
+/* ================================
+   AUTH PAGES (LOGIN / SIGNUP / TERMS)
+================================ */
+
+.auth-container{
+  max-width:420px;
+  margin:80px auto;
+  background:var(--card);
+  padding:30px;
+  border-radius:10px;
+  border:1px solid var(--border);
+  box-shadow:0 5px 20px rgba(0,0,0,0.1);
+}
+
+.auth-container h1{
+  text-align:center;
+  margin-bottom:25px;
+}
+
+.auth-container input{
+  width:100%;
+  padding:10px;
+  margin-bottom:12px;
+  border-radius:6px;
+  border:1px solid var(--border);
+  background:var(--card);
+  color:var(--text);
+}
+
+.auth-container label{
+  font-size:14px;
+}
+
+.auth-container button{
+  width:100%;
+  padding:10px;
+  border-radius:6px;
+  border:none;
+  background:#2563eb;
+  color:white;
+  font-size:15px;
+  margin-top:10px;
+}
+
+.auth-container button:hover{
+  background:#1d4ed8;
+}
+
+.auth-links{
+  text-align:center;
+  margin-top:15px;
+}
+
+.auth-links a{
+  color:#2563eb;
+  text-decoration:none;
+  font-size:14px;
+}
+
+.auth-links a:hover{
+  text-decoration:underline;
+}
+
+/* Google button */
+
+.google-btn{
+  background:white;
+  color:#444;
+  border:1px solid #ccc;
+  margin-top:10px;
+}
+
+.google-btn:hover{
+  background:#f1f1f1;
+}
+
+/* Show password alignment */
+
+.show-pass{
+  display:flex;
+  align-items:center;
+  gap:8px;
+  margin:10px 0 15px 0;
+  font-size:14px;
+}
+
+.show-pass input{
+  width:16px;
+  height:16px;
+  cursor:pointer;
+}
+/* signup page */
+
+
+.role-label{
+  display:block;
+  margin-top:15px;
+  margin-bottom:10px;
+  font-size:15px;
+  font-weight:500;
+}
+
+.role-options{
+  display:flex;
+  gap:30px;
+  margin-bottom:20px;
+  justify-content:flex-start;
+}
+
+.role-options label{
+  display:flex;
+  align-items:center;
+  gap:8px;
+  cursor:pointer;
+  font-size:14px;
+  white-space:nowrap;
+}
+
+.role-options input[type="radio"]{
+  accent-color:#2563eb;
+  cursor:pointer;
+}
+
+
+
+/* Password eye field */
+
+.password-field{
+  position:relative;
+  width:100%;
+  margin-bottom:15px;
+}
+
+.password-field input{
+  width:100%;
+  padding:10px 40px 10px 10px;
+  border-radius:6px;
+  border:1px solid var(--border);
+}
+
+.eye{
+  position:absolute;
+  right:12px;
+  top:50%;
+  transform:translateY(-50%);
+  cursor:pointer;
+  font-size:16px;
+  color:#666;
+}
+
+
+
+/* Terms page container */
+
+.container{
+  max-width:700px;
+  margin:60px auto;
+  background:var(--card);
+  padding:30px;
+  border-radius:10px;
+  border:1px solid var(--border);
+  box-shadow:0 5px 20px rgba(0,0,0,0.1);
+}
+
+.container button{
+  margin-top:15px;
+  padding:10px 20px;
+  border-radius:6px;
+  border:none;
+  background:#2563eb;
+  color:white;
+  cursor:pointer;
+}
+
+.container button:disabled{
+  background:#9ca3af;
+  cursor:not-allowed;
+}
+
+.terms-box{
+  max-height:180px;
+  overflow-y:auto;
+  padding:15px;
+  border:1px solid var(--border);
+  border-radius:8px;
+  margin-bottom:15px;
+  background:var(--bg);
+}
+
+/* Job form container */
+
+.form-container{
+  max-width:500px;
+  margin:80px auto;
+  background:var(--card);
+  padding:30px;
+  border-radius:10px;
+  border:1px solid var(--border);
+  box-shadow:0 5px 20px rgba(0,0,0,0.1);
+}
+
+.form-container h2{
+  text-align:center;
+  margin-bottom:25px;
+}
+
+.form-container input,
+.form-container select,
+.form-container textarea{
+  width:100%;
+  padding:10px;
+  margin-bottom:15px;
+  border-radius:6px;
+  border:1px solid var(--border);
+  background:var(--card);
+  color:var(--text);
+}
+
+.form-container textarea{
+  min-height:100px;
+}
+
+.form-container button{
+  width:100%;
+  padding:12px;
+  border:none;
+  border-radius:6px;
+  background:#2563eb;
+  color:white;
+  font-size:15px;
+  cursor:pointer;
+}
+
+.form-container button:hover{
+  background:#1d4ed8;
+}
+
+.settings-header{
+display:flex;
+justify-content:space-between;
+align-items:center;
+max-width:900px;
+margin:20px auto;
+}
+
+.dashboard-btn{
+background:#2563eb;
+color:white;
+border:none;
+padding:8px 14px;
+border-radius:6px;
+cursor:pointer;
+font-size:14px;
+}
+
+.dashboard-btn:hover{
+background:#1d4ed8;
+}

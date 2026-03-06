@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<title>Jobs | NextRole</title>
+
+<link rel="stylesheet" href="../../css/jobs.css">
+<link rel="stylesheet" href="../../css/style.css">
+
+</head>
+
+<body>
+
+<div id="navbar"></div>
+
+<div class="page-header">
+
+<h1>Available Jobs</h1>
+
+<button id="backBtn">
+← Back to Dashboard
+</button>
+
+</div>
+
+<hr>
+
+<div class="filters">
+
+<select id="locationFilter">
+
+<option value="">All Locations</option>
+<option value="hyderabad">Hyderabad</option>
+<option value="bangalore">Bangalore</option>
+<option value="remote">Remote</option>
+
+</select>
+
+
+<select id="typeFilter">
+
+<option value="">All Job Types</option>
+<option value="full-time">Full Time</option>
+<option value="internship">Internship</option>
+<option value="contract">Contract</option>
+
+</select>
+
+
+<select id="expFilter">
+
+<option value="">All Experience</option>
+<option value="fresher">Fresher</option>
+<option value="1">1 Year</option>
+<option value="2">2 Years</option>
+<option value="3">3+ Years</option>
+
+</select>
+
+</div>
+
+
+<div id="jobsContainer" class="jobs-container"></div>
+
+<p id="msg"></p>
+
+
+<script src="../../js/core/theme.js"></script>
+
+<script type="module" src="../../js/core/navbar.js"></script>
+
+<script type="module" src="../../js/core/search.js"></script>
+
+<script type="module" src="../../js/jobseeker/jobs.js"></script>
+
+</body>
+
+</html>

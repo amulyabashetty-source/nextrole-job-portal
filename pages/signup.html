@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Signup | NextRole</title>
+
+  <link rel="stylesheet" href="../css/style.css">
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+</head>
+
+<body>
+
+<div class="auth-container">
+
+<h1>Signup</h1>
+
+<form id="signupForm">
+
+<input type="email" id="email" placeholder="Email" required>
+
+<div class="password-field">
+  <input type="password" id="password" placeholder="Password" required>
+  <i class="fa-solid fa-eye eye" id="togglePassword"></i>
+</div>
+
+<label class="role-label">Select Role</label>
+
+<div class="role-options">
+
+<label>
+<input type="radio" name="role" value="jobseeker" required>
+Job Seeker
+</label>
+
+<label>
+<input type="radio" name="role" value="employer" required>
+Employer
+</label>
+
+</div>
+
+<button type="submit">Signup</button>
+
+</form>
+
+<p id="msg"></p>
+
+<div class="auth-links">
+Already have an account?
+<a href="login.html">Login</a>
+</div>
+
+</div>
+
+<script src="../js/core/theme.js"></script>
+
+<script type="module" src="../js/auth/signup.js"></script>
+
+</body>
+</html>

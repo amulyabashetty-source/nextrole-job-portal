@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<title>Jobseeker Dashboard | NextRole</title>
+
+<link rel="stylesheet" href="../../css/style.css">
+
+</head>
+
+<body>
+
+<div id="navbar"></div>
+
+<h1>Jobseeker Dashboard</h1>
+
+<div class="card" style="padding:15px;margin-bottom:15px;">
+Profile Completion:
+<strong id="profilePercent">0%</strong>
+</div>
+
+<button id="viewJobsBtn">🔍 View Jobs</button>
+
+<button id="myApplicationsBtn">📄 My Applications</button>
+
+<button onclick="location.href='../profile.html'">
+My Profile
+</button>
+
+<button onclick="location.href='saved-jobs.html'">
+⭐ Saved Jobs
+</button>
+
+<button id="logoutBtn">
+Logout
+</button>
+
+<hr>
+
+<div id="profileBox"
+style="border:1px solid #ccc;padding:15px;margin-bottom:20px;">
+
+Loading profile...
+
+</div>
+
+<script src="../../js/core/theme.js"></script>
+
+<script type="module" src="../../js/core/navbar.js"></script>
+
+<script type="module" src="../../js/core/search.js"></script>
+
+<script type="module" src="../../js/jobseeker/jobseeker-dashboard.js"></script>
+
+</body>
+</html>

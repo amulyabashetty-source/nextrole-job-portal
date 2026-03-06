@@ -1,0 +1,183 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+
+<title>Profile Setup | NextRole</title>
+
+<link rel="stylesheet" href="../css/style.css">
+<link rel="stylesheet" href="../css/profile.css">
+
+</head>
+
+<body>
+
+<div id="navbar"></div>
+
+<div class="profile-container">
+
+<h2>Complete Your Profile</h2>
+
+<form id="profileForm" class="profile-form">
+
+<h3>Profile Photo</h3>
+
+<div style="display:flex; align-items:center; gap:20px;">
+
+<img
+id="profilePreview"
+src="https://via.placeholder.com/120"
+alt="Profile Photo"
+style="width:120px;height:120px;border-radius:50%;object-fit:cover;border:2px solid #ccc;cursor:pointer;"
+/>
+
+<div>
+
+<input type="file" id="profilePhoto" accept="image/*">
+
+<br><br>
+
+<button type="button" id="removePhotoBtn">
+Remove Photo
+</button>
+
+</div>
+
+</div>
+
+<p class="profile-helper">
+Photo will be saved and restored automatically.
+</p>
+
+<div id="photoModal"
+style="display:none;position:fixed;top:0;left:0;width:100%;height:100%;background:rgba(0,0,0,0.7);justify-content:center;align-items:center;">
+
+<img id="modalImage"
+style="max-width:90%;max-height:90%;border-radius:10px;">
+
+</div>
+
+<!-- JOBSEEKER -->
+
+<div id="jobseekerFields">
+
+<h3>Basic Details</h3>
+
+<input type="text" id="name" placeholder="Full Name"><br><br>
+
+<input type="text" id="skills" placeholder="Skills (HTML, CSS, JS)"><br><br>
+
+<input type="number" id="experience" placeholder="Experience (years)"><br><br>
+
+<input type="text" id="location" placeholder="Location"><br><br>
+
+<h3>Education</h3>
+
+<input type="text" id="degree" placeholder="Degree"><br><br>
+
+<input type="text" id="branch" placeholder="Branch"><br><br>
+
+<input type="text" id="college" placeholder="College Name"><br><br>
+
+<input type="text" id="year" placeholder="Year of Passing"><br><br>
+
+<input type="text" id="cgpa" placeholder="CGPA"><br><br>
+
+<h3>Projects</h3>
+
+<div id="projectsContainer"></div>
+
+<input type="text" id="projectTitle" placeholder="Project Title"><br><br>
+
+<textarea id="projectDesc" placeholder="Project Description"></textarea><br><br>
+
+<input type="text" id="projectTech" placeholder="Technologies Used"><br><br>
+
+<button type="button" id="addProjectBtn">
+➕ Add Project
+</button>
+
+<h3>Certifications</h3>
+
+<textarea id="certifications"
+placeholder="Coursera, Udemy, NPTEL etc"></textarea><br><br>
+
+</div>
+
+<h3>Resume</h3>
+
+<input
+type="url"
+id="resumeLink"
+placeholder="Paste Google Drive resume link (public access)"
+>
+
+<br><br>
+
+<!-- EMPLOYER -->
+
+<div id="employerFields">
+
+<h3>Recruiter Details</h3>
+
+<input type="text" id="employerName" placeholder="Your Name"><br><br>
+
+<input type="text" id="employerRole" placeholder="Role (HR, Recruiter)"><br><br>
+
+<input type="number" id="employerExperience" placeholder="Experience"><br><br>
+
+<input type="text" id="previousCompany" placeholder="Previous Company"><br><br>
+
+<h3>Company Details</h3>
+
+<h4>Company Logo</h4>
+
+<img
+id="companyLogoPreview"
+src="https://via.placeholder.com/120"
+style="width:120px;height:120px;object-fit:contain;border:2px solid #ccc;border-radius:8px;background:white;"
+>
+
+<br><br>
+
+<input type="file" id="companyLogo" accept="image/*">
+
+<br><br>
+
+<input type="text" id="companyName" placeholder="Company Name"><br><br>
+
+<input type="text" id="industry" placeholder="Industry"><br><br>
+
+<input type="text" id="companyLocation" placeholder="Company Location"><br><br>
+
+<input type="url" id="companyWebsite"
+placeholder="Company Website (optional)">
+
+</div>
+
+<h3>Social Links</h3>
+
+<input type="url" id="linkedin"
+placeholder="LinkedIn Profile URL"><br><br>
+
+<input type="url" id="github"
+placeholder="GitHub Profile URL"><br><br>
+
+<button type="submit">
+Save Profile
+</button>
+
+</form>
+
+<p id="msg"></p>
+
+</div>
+
+<script src="../js/core/theme.js"></script>
+
+<script type="module" src="../js/core/navbar.js"></script>
+
+<script type="module" src="../js/core/profile.js"></script>
+
+</body>
+</html>
