@@ -79,67 +79,66 @@ https://github.com/amulyabashetty-source/nextrole-job-portal
 - Cloudinary (Image storage)
 
 ---
+## Project Structure
 
-# Project Structure
-
+```
 NextRole/
 │
 ├── index.html
 │
 ├── pages/
-│ ├── employer/
-│ │ ├── employer-dashboard.html
-│ │ ├── add-job.html
-│ │ ├── posted-jobs.html
-│ │ └── applications.html
-│ │
-│ └── jobseeker/
-│ ├── jobseeker-dashboard.html
-│ ├── jobs.html
-│ ├── job-details.html
-│ ├── my-applications.html
-│ └── saved-jobs.html
+│   ├── employer/
+│   │   ├── employer-dashboard.html
+│   │   ├── add-job.html
+│   │   ├── posted-jobs.html
+│   │   └── applications.html
+│   │
+│   └── jobseeker/
+│       ├── jobseeker-dashboard.html
+│       ├── jobs.html
+│       ├── job-details.html
+│       ├── my-applications.html
+│       └── saved-jobs.html
 │
 ├── js/
-│ ├── core/
-│ │ ├── firebase.js
-│ │ ├── navbar.js
-│ │ ├── theme.js
-│ │ └── search.js
-│ │
-│ ├── auth/
-│ │ ├── login.js
-│ │ └── signup.js
-│ │
-│ ├── employer/
-│ │ ├── employer-dashboard.js
-│ │ ├── add-job.js
-│ │ ├── posted-jobs.js
-│ │ └── applications.js
-│ │
-│ └── jobseeker/
-│ ├── jobseeker-dashboard.js
-│ ├── jobs.js
-│ ├── job-details.js
-│ ├── my-applications.js
-│ └── saved-jobs.js
+│   ├── core/
+│   │   ├── firebase.js
+│   │   ├── navbar.js
+│   │   ├── theme.js
+│   │   └── search.js
+│   │
+│   ├── auth/
+│   │   ├── login.js
+│   │   └── signup.js
+│   │
+│   ├── employer/
+│   │   ├── employer-dashboard.js
+│   │   ├── add-job.js
+│   │   ├── posted-jobs.js
+│   │   └── applications.js
+│   │
+│   └── jobseeker/
+│       ├── jobseeker-dashboard.js
+│       ├── jobs.js
+│       ├── job-details.js
+│       ├── my-applications.js
+│       └── saved-jobs.js
 │
 ├── css/
-│ ├── style.css
-│ ├── jobs.css
-│ ├── job-details.css
-│ ├── profile.css
-│ └── settings.css
+│   ├── style.css
+│   ├── jobs.css
+│   ├── job-details.css
+│   ├── profile.css
+│   └── settings.css
 │
 ├── assets/
-│ └── images/
-│ ├── logo.png
-│ └── nextrole_image.png
+│   └── images/
+│       ├── logo.png
+│       └── nextrole_image.png
 │
 └── README.md
+```
 
-
----
 
 ## How to Run the Project
 
