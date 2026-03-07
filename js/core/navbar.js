@@ -14,7 +14,7 @@ document.body.insertAdjacentHTML("afterbegin",`
 <nav class="navbar">
 
 <div class="nav-left">
-<span class="brand">NextRole</span>
+<a href="../../index.html" class="brand">NextRole</a>
 </div>
 
 <div class="nav-center">
@@ -35,9 +35,9 @@ alt="Profile"
 
 <div id="navMenu" class="nav-menu hidden">
 
-<a href="../../profile.html">Profile</a>
+<a href="../../pages/profile.html">Profile</a>
 
-<a href="../../settings.html">Settings</a>
+<a href="../../pages/settings.html">Settings</a>
 
 <hr>
 
@@ -125,7 +125,7 @@ logoutBtn.addEventListener("click",async()=>{
 
 await signOut(auth);
 
-window.location.replace("../../login.html");
+window.location.replace("../../pages/login.html");
 
 });
 
@@ -147,6 +147,6 @@ await deleteDoc(doc(db,"users",user.uid));
 
 await user.delete();
 
-window.location.replace("../../signup.html");
+window.location.replace("../../pages/signup.html");
 
 });
