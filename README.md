@@ -6,7 +6,7 @@
 ![GitHub forks](https://img.shields.io/github/forks/amulyabashetty-source/nextrole-job-portal)
 ![GitHub license](https://img.shields.io/github/license/amulyabashetty-source/nextrole-job-portal)
 
-A modern **job portal web application** where job seekers can search and apply for jobs while employers can post job openings and manage applicants.
+A modern full-stack job portal application that enables job seekers to search and apply for jobs, while employers can post job openings and manage applicants efficiently.
 
 NextRole demonstrates a **real-world recruitment workflow** including authentication, job listings, applicant management, and employer dashboards.
 
@@ -190,7 +190,7 @@ js/core/firebase.js
 
 ## Why This Project
 
-This project demonstrates practical experience in building a **full-stack web application** using modern JavaScript and cloud services.
+This project demonstrates hands-on experience in building a scalable full-stack web application using modern JavaScript and cloud-based services.
 
 Key concepts implemented:
 
