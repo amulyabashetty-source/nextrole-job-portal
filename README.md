@@ -1,5 +1,7 @@
 # NextRole – Job Portal Web Application
 
+🚀 Live Demo: https://evertrust-digital-studio-tau.vercel.app
+
 ![NextRole Logo](assets/images/logo.png)
 
 ![GitHub stars](https://img.shields.io/github/stars/amulyabashetty-source/nextrole-job-portal)
